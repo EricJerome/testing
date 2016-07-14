@@ -1,0 +1,847 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9021PHO |  A Modern Vietnamese Kitchen</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/custom_modal.css" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" />
+    <link rel="stylesheet" href="css/line-icons.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700%7COswald%7CNixie+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+
+    <a id="home" class="in-page-link"></a>
+    <nav class="logo-center nav-overlay">
+        <div class="row">
+            <div class="medium-5 columns text-right">
+                <ul class="menu">
+                    <li>
+                        <a href="#home" class="inner-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#menu" class="inner-link">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#locations" class="inner-link">Locations</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="medium-2 columns text-center">
+                <img alt="9021Pho" src="img/logo.png" class="logo medium-9">
+                <img alt="9021Pho" src="img/logo-dark.png" class="logo logo-dark medium-10">
+            </div>
+
+            <div class="medium-5 columns text-left">
+                <ul class="menu">
+                    <li>
+                        <a href="#about" class="inner-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#press" class="inner-link">Press</a>
+                    </li>
+                    <li>
+                        <a href="#reservations" class="inner-link">Order Online</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle">
+                <i class="icon icon_menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-container"></div>
+
+    <div class="footer-container"></div>
+
+    <section class="hero-slider parallax-header slider-fullscreen">
+        <div id="myModal" class="reveal-modal" data-reveal>
+            <!--// Revised Form //-->
+            <div id="free_form">
+                <div id="close"></div>
+                <div id="form_header">
+                </div>
+                <div id="form_pick">
+                    <img src="img/form_pick_bg.jpg">
+                </div>
+                <div id="form_content">
+                    <h1>Simply sign up for our loyalty program to receive your offer:</h1>
+                    <h2>-fill out the form below to sign up, present your email offer to the server-</h2>
+                    <p>By submitting your info, you are agreeing to the terms of service of Fivestars. You're also agreeing to receive promotional emails and text messages (if applicable, &lt; 1 per week) from 9021Pho. Be sure to check your inbox (and spam folder) for an email from 9021Pho that will serve as your coupon for this promotion.</p>
+                </div>
+                <form id="form" action="php/mail.php" method="post">
+                    <div class="form-input">
+                        <input type="text" class="form_text" name="name" placeholder="full name (required)">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" class="form_text" name="email" placeholder="email (required)">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" class="form_text" name="phone" placeholder="mobile phone">
+                    </div>
+                    <input type="submit" class="form_submit" value="">
+                </form>
+            </div>
+            <style>
+                #free_form { background-color: #fff; font-family: "Roboto Slab",serif; margin: 40px auto 0; height: auto; position: relative; width: 100%; max-width: 870px; z-index: 1005; }
+                #free_form #close { position: absolute; right: -20px; top: -20px; }
+                #free_form #form_header { background-image: url(img/form_header_bg.jpg); width: 100%; height: 91px; position: relative; background-position: center; }
+                #free_form #form_pick { width: 100%; height: auto; position: relative; background-position: center; }
+                #free_form #form_content {}
+                    #free_form h1 { font-family: 'Roboto Slab', serif; font-size: 24px; line-height: 30px; color: #6c8b45; text-align: center; font-weight: 400; letter-spacing: 1px; padding: 0; margin: 20px 0 0; text-transform: none; }
+                    #free_form h2 { font-family: 'Roboto Slab', serif; font-size: 20px; line-height: 24px; color: #4d4d4d; text-align: center; font-weight: 300; letter-spacing: 1px; padding: 0; margin: 0 0 16px; text-transform: none; }
+                #free_form #form { height: 180px; width: 100%; max-width: 724px; background-color: #6c8b45; margin: 0 auto; }
+                    #free_form .form_text { height: 52px; width: 320px; background-color: #fff; text-align: center; font-weight: 400; letter-spacing: 1px; padding: 0; margin: 25px 20px 0; border: 0; font-style: italic; font-size: 17px; font-family: 'Roboto Slab', serif; }
+                    #free_form .form_submit { background-image: url("img/form_submit_bg.jpg"); background-position: center top; border: 0 none; cursor: pointer; height: 52px; margin: 102px 20px 0 -340px; position: absolute; width: 320px; }
+                        #free_form .form_submit:hover { background-position: center bottom; }
+                    #free_form #form_content p { font-size: 9px; letter-spacing: 0; line-height: 12px; margin: 0 auto 18px; max-width: 720px; padding: 0; }
+                    #free_form #form_background { background-color: rgba(0, 0, 0, 0.8); bottom: 0; height: 100%; left: 0; position: fixed; width: 100%; z-index: 1004; }
+                .form-input { float: left; }
+                    .has-error .form_text { color: #ff0000; font-weight: bold !important; }
+                    .has-error label { background-color: #ff0000; color: #fff; font-size: 14px; height: 27px; margin: 75px 0 0 -340px; padding: 7px 0 0; position: absolute; text-align: center; width: 320px; }
+                    .has-error .form_text { border: 2px solid #ff0000!important; }
+
+                @media (max-width: 1100px) {
+                    .form-input { float: none; }
+                    #free_form #form { padding: 25px 0; height: auto; }
+                    #free_form .form_text { float: none; margin: 0 auto 25px; max-width: 320px; position: relative; width: 100%; display: block; }
+                    #free_form .form_submit { display: block; margin: 0 auto; position: relative; width: 100%; max-width: 320px; }
+                    .has-error label {
+                        background-color: #ff0000;
+                        color: #fff;
+                        font-size: 14px;
+                        height: 27px;
+                        left: 50%;
+                        margin: -27px 0 0 -160px;
+                        padding: 7px 0 0;
+                        position: absolute;
+                        text-align: center;
+                        width: 100%;
+                        max-width: 320px;
+                    }       }
+                @media (max-width: 500px) {
+                    #free_form .form_text { width: 80%; }
+                    #free_form .form_submit { width: 80%; }
+                    .has-error label { width: 80%; margin: -27px 0 0; }
+
+                }
+            </style>
+            <!--// Revised Form //-->
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <ul class="slides">
+            <li>
+                <div class="background-image-holder parallax-background">
+                    <div class="overlay background-dark-grey"></div>
+                    <img alt="Slide Background" class="background-image" src="img/hero2.jpg">
+                </div>
+
+                <div class="video-wrapper">
+                    <video autoplay muted loop>
+                        <source src="video/video.webm" type="video/webm">
+                            <!-- <source src="video/video.mp4" type="video/mp4"> -->
+                            <source src="video/video.ogv" type="video/ogg">
+                            </video>
+                            <div class="overlay background-dark-grey"></div>
+                        </div>
+
+                        <div class="row slide-content parallax-title">
+                            <div class="medium-12 columns text-center">
+                                <div class="headline-style-1 parallax-title">
+                                    <img alt="9021Pho" src="img/logolrg.png">
+                                    <span class="sub-title text-white">A Modern Vietnamese Kitchen</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+
+        </ul>
+    </section>
+
+    <a id="about" class="in-page-link"></a>
+    <section class="no-pad">
+
+        <div class="photo-container medium-5 right-align divider-background">
+            <div class="background-image-holder parallax-background">
+                <img class="background-image" alt="9021Pho A Modern Vietnamese Kitchen" src="img/side1.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="medium-6 columns">
+                <h3>9021Pho is an "East Meets West", Vietnamese/California fusion fare, where healthy meets hip.</h3>
+                <span class="sub-title sub-title">A Vietnamese/California fusion eatery with passion &amp; soul</span>
+                <hr>
+                <p class="text-left">
+                   We offer a unique culinary experience that focuses on innovation, quality products at a value, and an approachable menu that ensures a one-of-a-kind dining experience that will never compromise on our industry leading standards &amp; expectations.
+               </p>
+               <p class="text-left">
+                 Ever expanding, 9021Pho has four locations for dine-in, take out, or delivery:
+                 <ul>
+                    <li><a href="#locations"><strong>Beverly Hills</strong></a> - 490 N. Beverly Drive</li>
+                    <li><a href="#locations"><strong>Glendale Galleria</strong></a> - 1164 Glendale Galleria Way</li>
+                    <li><a href="#locations"><strong>Sherman Oaks</strong></a> - Westfield Fashion Square Mall, 14006 Riverside Drive</li>
+                    <li><a href="#locations"><strong>West Hollywood</strong></a> - 7950 W. Sunset Boulevard</li>
+
+                </ul>
+            </p>
+            <img alt="9021Pho" src="img/signature.png" class="medium-4 small-6">
+        </div>
+    </div>
+
+</section>
+    <a id="press" class="in-page-link"></a>
+    <section class="divider-background">
+        <div class="background-image-holder parallax-background">
+            <div class="overlay background-dark-grey"></div>
+            <img alt="Divider Background" class="background-image" src="img/hero1.jpg">
+        </div>
+        <div class="row">
+            <div class="medium-12 columns text-center">
+                <div class="headline-style-2">
+                    <h3 class="text-white">Press and Reviews</h3>
+                    <span class="sub-title text-white">What people are saying about us</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-pad">
+
+        <div class="photo-container medium-5 left-align divider-background">
+            <div class="background-image-holder parallax-background">
+                <img class="background-image" alt="9021Pho A Modern Vietnamese Kitchen" src="img/side2.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="medium-6 columns right no-left-pad">
+                <h3>A dining experience like no other, 9021Pho offers a bold &amp; refreshing take on California/Vietnamese fusion cuisine.</h3>
+                <span class="sub-title sub-title">Kimberly D. - Los Angeles, CA</span>
+                <br><br>
+                <span class="sub-title sub-title">Yelp 3/2/2015 - &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; </span>
+                <hr>
+                <p class="medium-12 columns no-left-pad">
+                    I always love the flavors at this place! Just took my mom here and she was very impressed. The service is excellent and consistent every time I come. I'm always greeted with a smile and treated like I'm special.
+                </p>
+
+                <p class="medium-12 columns no-left-pad">
+                   My favorite dishes are the crispy fish and chicken curry pho. The crispy mock chicken appetizer is delish and it's hard to tell there's no meat. I have to eat at 9021pho at least once a week to satisfy my cravings.
+               </p>
+           </div>
+       </div>
+
+   </section>
+   <a id="menu" class="in-page-link"></a>
+   <section class="divider-background">
+
+    <div class="background-image-holder parallax-background">
+        <div class="overlay background-dark-grey"></div>
+        <img alt="Divider Background" class="background-image" src="img/hero5.jpg">
+    </div>
+
+        <div class="row">
+
+            <div class="medium-12 columns text-center">
+                <div class="headline-style-2">
+                    <h3 class="text-white">Our Menu</h3>
+                    <span class="sub-title text-white" style="font-size: 18px;">What We Offer</span>
+                    <div class="line"></div>
+                    <a style="padding: 10px 20px;font-size: 31px;border: 2px solid #74944B;background-color: #74944B;color: #fff;" href="/assets/Menu_9021Pho_Final-2-2.pdf" target="_blank" class="location">VIEW OUR MENU</a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+        <a id="reservations" class="in-page-link"></a>
+        <section class="divider-background">
+
+            <div class="background-image-holder parallax-background">
+                <div class="overlay background-dark-grey"></div>
+                <img alt="Divider Background" class="background-image" src="img/hero3.jpg">
+            </div>
+
+            <div class="video-wrapper">
+                <video autoplay muted loop>
+                    <source src="video/video.webm" type="video/webm">
+                        <source src="video/video.mp4" type="video/mp4">
+                            <source src="video/video.ogv" type="video/ogg">
+                            </video>
+                            <div class="overlay background-dark-grey"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-12 columns text-center">
+                                <div class="headline-style-2">
+                                    <h3 class="text-white">Order Online</h3>
+                                    <span class="sub-title text-white">powered by EAT24</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="no-pad">
+
+                        <div class="photo-container medium-3 left-align divider-background">
+                            <div class="background-image-holder parallax-background">
+                                <img class="background-image" alt="9021Pho A Modern Vietnamese Kitchen" src="img/hero3.jpg">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-8 columns text-center right visible-for-small-only">
+                                 <div id="openChow" style="height: 400px">
+                                    <h3>Order from any of our locations online through EAT24</h3>
+                                    <h4>Choose your location:</h4>
+                                    <a style="padding: 10px 20px;font-size:24px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin: 10px;line-height: 60px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36845" class="location">Beverly Hills</a><br>
+                                    <a style="padding: 10px 20px;font-size: 24px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin: 10px;line-height: 60px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36844" class="location">Glendale</a><br>
+                                    <a style="padding: 10px 20px;font-size: 24px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin: 10px;line-height: 60px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36843" class="location">Sherman Oaks</a><br>
+                                    <a style="padding: 10px 20px;font-size: 24px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin: 10px;line-height: 60px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36830" class="location">West Hollywood</a>
+                                </div>
+                            </div>
+                            <div class="medium-8 columns text-center right hidden-for-small-only">
+                                <div id="openChow" style="height: 400px">
+                                    <h3>Order from any of our locations online through EAT24</h3>
+                                    <h4>Choose your location:</h4>
+                                    <a style="padding: 10px 20px;font-size: 31px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin: 10px;line-height: 80px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36845" class="location">Beverly Hills</a>
+                                    <a style="padding: 10px 20px;font-size: 31px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin: 10px;line-height: 80px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36844" class="location">Glendale</a>
+                                    <a style="padding: 10px 20px;font-size: 31px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin: 10px;line-height: 80px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36843" class="location">Sherman Oaks</a>
+                                    <a style="padding: 10px 20px;font-size: 31px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin: 10px;line-height: 80px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36830" class="location">West Hollywood</a>
+                                </div>
+                                <div id="chowNow" style="display:none">
+
+                                    <iframe id="chownow-iframe" height="500" width="100%" frameborder="0" scrolling="no" style="display: block; height: 423px;"></iframe>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- locations -->
+                    <a id="locations" class="in-page-link"></a>
+                    <section class="divider-background">
+                        <div class="background-image-holder parallax-background">
+                            <div class="overlay background-dark-grey"></div>
+                            <img alt="Divider Background" class="background-image" src="img/hero2.jpg">
+                        </div>
+                        <div class="row">
+                            <div class="medium-12 columns text-center">
+                                <div class="headline-style-2">
+                                    <h3 class="text-white">Our Locations</h3>
+                                    <span class="sub-title text-white">The current 4 locations we have.</span>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="all-locations">
+                        <!-- location tabs nav -->
+                        <div class="map-nav">
+                            <a href="#" data-type="locations-1" class="location">Beverly Hills</a>
+                            <a href="#" data-type="locations-2" class="location">Glendale</a>
+                            <a href="#" data-type="locations-3" class="location">Sherman Oaks</a>
+                            <a href="#" data-type="locations-5" class="location">West Hollywood</a>
+                        </div>
+
+                        <!-- /location tabs nav -->
+                        <!-- location tabs slides -->
+                        <!-- location 1 -->
+                        <div id="locations-1" class="hide">
+                            <!-- map -->
+                            <section class="map no-pad">
+                                <div class="map-holder">
+                                    <div class="overlay background-dark-grey"></div>
+                                    <iframe src="http://maps.google.com/maps?hl=en&q=490+North+Beverly+Drive%2C+Beverly+Hills%2C+CA+90210&iwloc=A&z=11&t=m&output=embed" id="loc1"></iframe>
+                                </div>
+                            </section>
+                            <!-- /map -->
+                            <!-- the info -->
+                            <section class="contact contact-1 divider-background">
+                                <div class="background-image-holder parallax-background" style="-webkit-transform: translate3d(0px, 86px, 0px) !important">
+                                    <div class="overlay background-dark-grey"></div>
+                                    <img alt="Divider Background" class="background-image" src="img/gallery2.jpg">
+                                </div>
+                                <div class="row">
+                                    <div class="medium-8 columns">
+                                        <div class="testimonials-slider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <h3 class="text-white">9021Pho is one of Californias's most renowned vietnamese fusion eateries for a reason. Food is divine and the atmosphere is utterly authentic.</h3>
+                                                    <span class="author sub-title text-white">Jane Harper - via Twitter</span>
+                                                </li>
+
+                                                <li>
+                                                    <h3 class="text-white">Dining at 9021Pho is an unforgettable experience best enjoyed with good friends and family.</h3>
+                                                    <span class="author sub-title text-white">Louise Duke - via Tripadvisor</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="medium-4 columns offix">
+                                        <div class="medium-6 left">
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Phone</h6>
+                                                <p class="text-white">
+                                                    (310) 275-5277
+                                                </p>
+                                            </div>
+
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Address</h6>
+                                                <p class="text-white">
+                                                    490 North Beverly Drive
+                                                    <br>
+                                                    Beverly Hills
+                                                    <br>
+                                                    CA 90210
+                                                </p>
+                                            </div>
+
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Email</h6>
+                                                <p class="text-white">
+                                                    info@9021Pho.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="medium-6 left">
+                                            <div class="contact-method">
+                                                <a style="padding: 5px 10px;font-size:18px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin:10px 0px;line-height: 40px;" href="https://postmates.com/la/9021pho-beverly-hills-beverly-hills" class="location">Order Delivery</a>
+                                            <br><br>
+                                                <a style="padding: 5px 10px;font-size:18px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin:10px 0px;line-height: 40px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36845" class="location">Order Pick-Up</a>
+                                            </div>
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Hours</h6>
+                                                <p class="text-white">
+                                                    <strong>Mon - Sun:</strong>&nbsp;
+                                                    <br>
+                                                    11am - 10:00
+                                                    <br>
+                                                <h6 class="text-white">Delivery Hours</h6>
+                                                <p class="text-white">
+                                                    <strong>Mon - Sun:</strong>
+                                                    <br>
+                                                    11am-9:30pm
+                                                </p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- /the info -->
+                        </div>
+                        <!-- /location 1 -->
+                        <!-- location 2 -->
+                        <div id="locations-2" class="hide">
+                            <!-- map -->
+                            <section class="map no-pad">
+                                <div class="map-holder">
+                                    <div class="overlay background-dark-grey"></div>
+                                    <iframe src="http://maps.google.com/maps?hl=en&q=1164+Glendale+Galleria+Way%2C+Suite+G019%2C+Glendale%2C+CA+91210&iwloc=A&z=11&t=m&output=embed" id="loc2"></iframe>
+                                </div>
+                            </section>
+                            <!-- /map -->
+                            <!-- the info -->
+                            <section class="contact contact-1 divider-background">
+                                <div class="background-image-holder parallax-background" style="-webkit-transform: translate3d(0px, 86px, 0px) !important">
+                                    <div class="overlay background-dark-grey"></div>
+                                    <img alt="Divider Background" class="background-image" src="img/gallery2.jpg">
+                                </div>
+                                <div class="row">
+                                    <div class="medium-8 columns">
+                                        <div class="testimonials-slider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <h3 class="text-white">9021Pho is one of Californias's most renowned vietnamese fusion eateries for a reason. Food is divine and the atmosphere is utterly authentic.</h3>
+                                                    <span class="author sub-title text-white">Jane Harper - via Twitter</span>
+                                                </li>
+
+                                                <li>
+                                                    <h3 class="text-white">Dining at 9021Pho is an unforgettable experience best enjoyed with good friends and family.</h3>
+                                                    <span class="author sub-title text-white">Louise Duke - via Tripadvisor</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="medium-4 columns offix">
+                                        <div class="medium-6 left">
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Phone</h6>
+                                                <p class="text-white">
+                                                    (818) 551-9021
+                                                </p>
+                                            </div>
+
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Address</h6>
+                                                <p class="text-white">
+                                                    1164 Glendale Galleria Way, Suite G019
+                                                    <br>
+                                                    Glendale
+                                                    <br>
+                                                    CA 91210
+                                                </p>
+                                            </div>
+
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Email</h6>
+                                                <p class="text-white">
+                                                    info@9021Pho.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="medium-6 left">
+                                            <div class="contact-method">
+                                                <a style="padding: 5px 10px;font-size:18px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin:10px 0px;line-height: 40px;" href="https://postmates.com/la/9021pho-glendale" class="location">Order Delivery</a>
+                                            <br><br>
+                                                <a style="padding: 5px 10px;font-size:18px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin:10px 0px;line-height: 40px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36844" class="location">Order Pick-Up</a>
+                                            </div>
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Hours</h6>
+                                                <p class="text-white">
+                                                    <strong>Mon - Sun:</strong>
+                                                    <br>
+                                                    11am - 10:00
+                                                    <br>
+                                                <h6 class="text-white">Delivery Hours</h6>
+                                                <p class="text-white">
+                                                    <strong>Mon - Sat:</strong>&nbsp;11am-9pm
+                                                    <br>
+                                                    <strong>Sunday:</strong>&nbsp;11am-8pm
+
+
+                                                </p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!-- /the info -->
+                        </div>
+                        <!-- /location 2 -->
+                        <!-- location 3 -->
+                        <div id="locations-3" class="hide">
+                            <!-- map -->
+                            <section class="map no-pad">
+                                <div class="map-holder">
+                                    <div class="overlay background-dark-grey"></div>
+                                    <iframe src="http://maps.google.com/maps?hl=en&q=14006+Riverside+Drive%2C+Sherman+Oaks%2C+CA+91423&iwloc=A&z=11&t=m&output=embed" id="loc3"></iframe>
+                                </div>
+                            </section>
+                            <!-- /map -->
+                            <!-- the info -->
+                            <section class="contact contact-1 divider-background">
+                                <div class="background-image-holder parallax-background" style="-webkit-transform: translate3d(0px, 86px, 0px) !important">
+                                    <div class="overlay background-dark-grey"></div>
+                                    <img alt="Divider Background" class="background-image" src="img/gallery2.jpg">
+                                </div>
+                                <div class="row">
+                                    <div class="medium-8 columns">
+                                        <div class="testimonials-slider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <h3 class="text-white">9021Pho is one of Californias's most renowned vietnamese fusion eateries for a reason. Food is divine and the atmosphere is utterly authentic.</h3>
+                                                    <span class="author sub-title text-white">Jane Harper - via Twitter</span>
+                                                </li>
+
+                                                <li>
+                                                    <h3 class="text-white">Dining at 9021Pho is an unforgettable experience best enjoyed with good friends and family.</h3>
+                                                    <span class="author sub-title text-white">Louise Duke - via Tripadvisor</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="medium-4 columns offix">
+                                        <div class="medium-6 left">
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Phone</h6>
+                                                <p class="text-white">
+                                                    (818) 728-9021
+                                                </p>
+                                            </div>
+
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Address</h6>
+                                                <p class="text-white">
+                                                    14006 Riverside Drive
+                                                    <br>
+                                                    Sherman Oaks
+                                                    <br>
+                                                    CA 91423
+                                                </p>
+                                            </div>
+
+                                             <div class="contact-method">
+                                                <h6 class="text-white">Email</h6>
+                                                <p class="text-white">
+                                                    info@9021Pho.com
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="medium-6 left">
+                                            <div class="contact-method">
+                                                <a style="padding: 5px 10px;font-size:18px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin:10px 0px;line-height: 40px;" href="https://postmates.com/la/e85eb77e-a4a2-45a2-8c60-c219acf325df" class="location">Order Delivery</a>
+                                            <br><br>
+                                                <a style="padding: 5px 10px;font-size:18px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin:10px 0px;line-height: 40px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36843" class="location">Order Pick-Up</a>
+                                            </div>
+                                            <div class="contact-method">
+
+                                                <h6 class="text-white">Hours</h6>
+                                                <p class="text-white">
+                                                    <strong>Mon - Sat:</strong> 11am - 10pm
+                                                    <br>
+                                                    <strong>Sun:</strong> 11am - 10pm
+                                                    <br>
+                                                    </p>
+                                                <h6 class="text-white">Delivery Hours</h6>
+                                                <p class="text-white">
+                                                    <strong>Mon - Sat:</strong>&nbsp;11am-9pm
+                                                    <br>
+                                                    <strong>Sunday:</strong>&nbsp;11am-8pm
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- /the info -->
+                        </div>
+                        <!-- /location 3 -->
+
+                        <!-- location 5 -->
+                        <div id="locations-5" class="hide">
+                            <!-- map -->
+                            <section class="map no-pad">
+                                <div class="map-holder">
+                                    <div class="overlay background-dark-grey"></div>
+                                    <iframe src="http://maps.google.com/maps?hl=en&q=7950+West+Sunset+Blvd%2C+West+Hollywood%2C+CA+90046&iwloc=A&z=11&t=m&output=embed" id="loc5"></iframe>
+                                </div>
+                            </section>
+                            <!-- /map -->
+                            <!-- the info -->
+                            <section class="contact contact-1 divider-background">
+                                <div class="background-image-holder parallax-background" style="-webkit-transform: translate3d(0px, 86px, 0px) !important">
+                                    <div class="overlay background-dark-grey"></div>
+                                    <img alt="Divider Background" class="background-image" src="img/gallery2.jpg">
+                                </div>
+                                <div class="row">
+                                    <div class="medium-8 columns">
+                                        <div class="testimonials-slider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <h3 class="text-white">9021Pho is one of Californias's most renowned vietnamese fusion eateries for a reason. Food is divine and the atmosphere is utterly authentic.</h3>
+                                                    <span class="author sub-title text-white">Jane H. - via Twitter</span>
+                                                </li>
+                                                <li>
+                                                    <h3 class="text-white">Dining at 9021Pho is an unforgettable experience best enjoyed with good friends and family.</h3>
+                                                    <span class="author sub-title text-white">Louise D. - via Tripadvisor</span>
+                                                </li>
+                                                <li>
+                                                    <h3 class="text-white">The soup was so fresh and delicious, tons of fresh ingredients really made the flavor of the soup pop on my taste buds..</h3>
+                                                    <span class="author sub-title text-white">Megan S. - via FaceBook</span>
+                                                </li>
+
+                                                <li>
+                                                    <h3 class="text-white">Absolutely fantastic!! The food is always delicious and the service is great. Very friendly and helpful with beer suggestions! Great deal on the appetizer sampler!</h3>
+                                                    <span class="author sub-title text-white">Kristen D. - via Yelp</span>
+                                                </li>
+                                                <li>
+                                                    <h3 class="text-white">Great food and wonderful service. This is one of the best Pho places in LA...flavorful soups and terrific fresh ingredients.</h3>
+                                                    <span class="author sub-title text-white">Belinda M. - via Twitter</span>
+                                                </li>
+
+                                                <li>
+                                                    <h3 class="text-white">The eggplant is still BY FAR my favorite. The melt in your mouth texture and bold flavor with the addition of the nuts on top...SO GOOD.</h3>
+                                                    <span class="author sub-title text-white">Jenna C. - via Yelp</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="medium-4 columns offix">
+                                        <div class="medium-6 left">
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Phone</h6>
+                                                <p class="text-white">
+                                                    (323) 656-9021
+                                                </p>
+                                            </div>
+
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Address</h6>
+                                                <p class="text-white">
+                                                    7950 West Sunset Blvd
+                                                    <br>
+                                                    West Hollywood
+                                                    <br>
+                                                    CA 90046
+                                                </p>
+                                            </div>
+
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Email</h6>
+                                                <p class="text-white">
+                                                    info@9021Pho.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="medium-6 left">
+                                            <div class="contact-method">
+                                            <a style="padding: 5px 10px;font-size:18px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin:10px 0px;line-height: 40px;" href="https://postmates.com/la/1afaaa94-612f-45c9-8797-15370c3facb0" class="location">Order Delivery</a>
+                                            <br><br>
+                                            <a style="padding: 5px 10px;font-size:18px;border: 2px solid #74944B;background-color: #74944B;color: #fff;margin:10px 0px;line-height: 40px;" href="http://eat24hrs.com/restaurants/order2/index.php?id=36830" class="location">Order Pick-Up</a>
+                                            </div>
+                                            <div class="contact-method">
+                                                <h6 class="text-white">Hours</h6>
+                                                <p class="text-white">
+                                                    <strong>Mon - Sun:</strong>
+                                                    <br>
+                                                    11am - 10pm
+                                                    <br>
+                                                <h6 class="text-white">Delivery Hours</h6>
+                                                <p class="text-white">
+                                                    <strong>Delivery Hours:</strong>
+                                                    <br>
+                                                    11AM-9:30 PM
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- /the info -->
+                        </div>
+                        <!-- /location 5 -->
+                        <!-- location tabs slides -->
+                    </section>
+                    <!-- locations -->
+
+    <footer class="footer footer-social">
+        <div class="row">
+            <div class="medium-12 columns text-center">
+                <img alt="Logo" src="img/logo.png" class="medium-1 push-small">
+                <br>
+                <br>
+                <br>
+                <ul class="social-profiles">
+                    <li>
+                        <a href="https://www.facebook.com/9021pho"><i class="icon social_facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/9021PHO"><i class="icon social_twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/9021pho/"><i class="icon social_instagram"></i></a>
+                    </li>
+                </ul>
+                <br>
+
+                <br>
+                <span>&copy; <?php echo date("Y") ?> - All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation.reveal.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/spectragram.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+    <script src="js/validations.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script>
+
+        $(document).foundation();
+        $(document).ready(function(){$('#myModal').foundation('reveal', 'open')});
+        $(document).ready(function() {
+
+            $(".location").click(function() {
+                $(".hide").hide();
+                var dataType = $(this).attr('data-type');
+                $("#" + dataType).show();
+            });
+
+            // $("#openChow a").click(function() {
+            //     $("#chowNow").show();
+            //     $("#openChow").hide();
+            //     document.getElementById("chownow-iframe").src="https://facebook.chownow.com/search/locationPicker?company_id=2050";
+            // });
+
+            setTimeout(function() {
+                $('.map-nav a:first-child').addClass('location_trig');
+                $('.map-nav a:first-child').trigger('click');
+            },2);
+        });
+
+        $( "a.location" ).hover(
+            function() {
+                $( this ).addClass( "location_roll" );
+            }, function() {
+                $( this ).removeClass( "location_roll" );
+            }
+            );
+        $( ".map-nav a:nth-child(1)" ).click(
+            function() {
+                $( "a.location" ).removeClass( "location_trig" );
+                $( this ).addClass( "location_trig" );
+            }
+            );
+        $( ".map-nav a:nth-child(2)" ).click(
+            function() {
+                $( "a.location" ).removeClass( "location_trig" );
+                $( this ).addClass( "location_trig" );
+            }
+            );
+        $( ".map-nav a:nth-child(3)" ).click(
+            function() {
+                $( "a.location" ).removeClass( "location_trig" );
+                $( this ).addClass( "location_trig" );
+            }
+            );
+        $( ".map-nav a:nth-child(4)" ).click(
+            function() {
+                $( "a.location" ).removeClass( "location_trig" );
+                $( this ).addClass( "location_trig" );
+            }
+            );
+        $( ".map-nav a:nth-child(5)" ).click(
+            function() {
+                $( "a.location" ).removeClass( "location_trig" );
+                $( this ).addClass( "location_trig" );
+            }
+            );
+
+    </script>
+</body>
+</html>
